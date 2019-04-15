@@ -1,6 +1,6 @@
 """The main entry point of the application."""
 
-from flask import Flask
+from flask import Flask, render_template
 
 
 def create_app() -> Flask:
@@ -9,6 +9,6 @@ def create_app() -> Flask:
 
     @app.route('/')
     def say_hello() -> str:
-        return 'Hello, World!'
+        return render_template('base.html')
 
     return app
