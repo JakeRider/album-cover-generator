@@ -9,6 +9,7 @@ flake8-docstrings = "*"
 mypy = "*"
 coverage = "*"
 pytest = "*"
+python-dotenv = "*"
 
 [packages]
 flask = "*"
