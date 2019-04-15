@@ -12,7 +12,7 @@ html, body {
 
 .album {
   align-items: center;
-  background-blend-mode: saturation;
+  background-blend-mode: overlay;
   background-image:
     linear-gradient(black, black),
     url('https://source.unsplash.com/random/600x600');
