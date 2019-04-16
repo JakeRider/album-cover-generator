@@ -10,12 +10,12 @@
 </head>
 <body>
     <main class="root">
-        <div class="album">
+        <div id="album" class="album">
             <span id="albumTitle" class="album__info">{{ album.title }}</span>
             <span id="albumArtist" class="album__info album__info--small">{{ album.artist }}</span>
         </div>
+        <button id="newAlbumBtn">New Album</button>
     </main>
-    <button id="newAlbumBtn">New Album</button>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
