@@ -14,7 +14,7 @@ html, body {
   align-items: center;
   background-blend-mode: overlay;
   background-image:
-    linear-gradient(black, black),
+    linear-gradient(#000, #000),
     url('https://source.unsplash.com/random/600x600');
   border: 1px solid #eee;
   box-shadow: 0 2px 10px #ccc;
