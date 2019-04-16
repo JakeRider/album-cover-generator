@@ -3,6 +3,7 @@
 from flask import Flask, redirect
 
 from .album.controllers import album
+from .api.controllers import api
 
 
 def create_app() -> Flask:
@@ -10,6 +11,7 @@ def create_app() -> Flask:
     app = Flask(__name__)
 
     app.register_blueprint(album)
+    app.register_blueprint(api)
 
     @app.route('/')
     def index():
