@@ -1,8 +1,12 @@
 async function fetchAlbumJSON() {
-  const response = await fetch('/api/v1/album/generate-random');
-  const json = await response.json();
+  try {
+    const response = await fetch('/api/v1/album/generate-random');
+    const json = await response.json();
 
-  return json;
+    return json;
+  } catch(error) {
+    console.log(`Error: ${error}`);
+  }
 }
 
 async function updateAlbum() {
